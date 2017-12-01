@@ -1,7 +1,7 @@
  @extends('common')
  
  @section('content')
-	<form class="am-form" action="/admin/user/store" method="post">
+	<form class="am-form" action="{{asset('/admin/user/store')}}" method="post">
   <fieldset>
     <legend>后台用户添加</legend>
 	{{csrf_field()}}

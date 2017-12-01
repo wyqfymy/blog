@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>后台管理</title>
     <meta name="description" content="这是一个 index 页面">
+    <script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
@@ -17,6 +26,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/admin.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
     <script src="{{asset('assets/js/echarts.min.js')}}"></script>
+    <script src="{{asset('layer/layer.js')}}"></script>
 </head>
 
 <body data-type="index">
@@ -65,7 +75,11 @@
                         <li>
                             <a href="#" class="tpl-dropdown-content-message">
                                 <span class="tpl-dropdown-content-photo">
+<!-- <<<<<<< HEAD -->
                       <img src="{{asset('assets/img/user02.png')}}" alt=""> </span>
+<!-- ======= -->
+                      
+<!-- >>>>>>> origin/lwx -->
                                 <span class="tpl-dropdown-content-subject">
                       <span class="tpl-dropdown-content-from"> 禁言小张 </span>
                                 <span class="tpl-dropdown-content-time">10分钟前 </span>
@@ -74,7 +88,11 @@
                             </a>
                             <a href="#" class="tpl-dropdown-content-message">
                                 <span class="tpl-dropdown-content-photo">
+<!-- <<<<<<< HEAD -->
                       <img src="{{asset('assets/img/user03.png')}}" alt=""> </span>
+<!-- ======= -->
+                      
+<!-- >>>>>>> origin/lwx -->
                                 <span class="tpl-dropdown-content-subject">
                       <span class="tpl-dropdown-content-from"> Steam </span>
                                 <span class="tpl-dropdown-content-time">18分钟前</span>
@@ -132,7 +150,11 @@
 
                 <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+<!-- <<<<<<< HEAD -->
                         <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="{{asset('assets/img/user01.png')}}"></span>
+<!-- ======= -->
+                       
+<!-- >>>>>>> origin/lwx -->
                     </a>
                     <ul class="am-dropdown-content">
                         <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
@@ -176,28 +198,16 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
-                                <a href="table-font-list.html">
+                                <a href="{{asset('admin/user/index')}}">
                                     <i class="am-icon-angle-right"></i>
                                     <span>用户列表</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
-                                <a href="table-images-list.html">
+                                <a href="{{asset('admin/user/create')}}">
                                     <i class="am-icon-angle-right"></i>
                                     <span>添加用户</span>
-                                    <i class="tpl-left-nav-content tpl-badge-success">
-               18
-             </i>
-
-                                    <a href="form-news.html">
-                                        <i class="am-icon-angle-right"></i>
-                                        <span>权限设置</span>
-                                        <i class="tpl-left-nav-content tpl-badge-primary">
-               5
-             </i>
-
-
-                                   
+                                    <i class="tpl-left-nav-content tpl-badge-success"></i>  
                             </li>
                         </ul>
                     </li>
@@ -399,10 +409,13 @@
     </div>
 
 
+<!-- <<<<<<< HEAD -->
     <script src="{{asset('assets/js/jquery.min.js')}}"></script>
     <script src="{{asset('assets/js/amazeui.min.js')}}"></script>
     <script src="{{asset('assets/js/iscroll.js')}}"></script>
     <script src="{{asset('assets/js/app.js')}}"></script>
+<!-- ======= -->
+
 </body>
 
 </html>

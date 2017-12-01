@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\User;
+use App\Model\User;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -18,6 +18,7 @@ class UserController extends Controller
     public function index(Request $request)
     {
         //查数据
+        // dd($request);
         $data = User::orderBy('admin_id','asc')
             ->where(function($query) use($request){
                 //检测关键字
@@ -29,12 +30,8 @@ class UserController extends Controller
                 }
 
             })
-            ->paginate(3);
+            ->paginate(2);
         return view('admin.user.index',['data'=>$data, 'request'=> $request]);
-        // dd($data);
-        
-
-
     }
 
     /**
@@ -177,11 +174,19 @@ class UserController extends Controller
 
         $res = $user->update($data);
         // dd($input);
+        
+        $date = [];
         if($res){
-            return redirect('/admin/user/index');
+            $date['error'] = 0;
+            $date['msg'] ="删除成功";
         }else{
-            return back();
+            $date['error'] = 1;
+            $date['msg'] ="删除失败";
         }
+
+//        return  json_encode($data);
+
+        return $date;
 
     }
 
@@ -194,12 +199,18 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
-        $res = User::find($id)->delete();
-
+       $res = User::find($id)->delete();
+        $data = [];
         if($res){
-            return redirect('/admin/user/index');
+            $data['error'] = 0;
+            $data['msg'] ="删除成功";
         }else{
-            return back();
+            $data['error'] = 1;
+            $data['msg'] ="删除失败";
         }
+
+//        return  json_encode($data);
+
+        return $data;
     }
 }

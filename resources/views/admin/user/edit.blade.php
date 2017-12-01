@@ -3,7 +3,7 @@
  @section('content')
 	<form class="am-form" action="{{url('admin/user/update/')}}<?php echo '/'.$data['admin_id'];?>" method="post">
   <fieldset>
-    <legend>后台用户添加</legend>
+    <legend>后台用户修改信息</legend>
 	{{csrf_field()}}
 	@if (count($errors) > 0)
 		<div class="alert alert-danger">

@@ -5,12 +5,16 @@
 	#www
 	{
 		position:absolute;
-		left:1081px;
+		left:932px;
 		top:65px;
 		width:373px;
 		height:23px;
 		z-index:2;
 	}
+  #qqq{
+    /*position:absolute;*/
+    height:565px;
+  }
 </style>
 <div class="admin-content">
     <div class="admin-content-body">
@@ -18,7 +22,7 @@
         <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">后台用户</strong> / <small>几个后台的用户</small></div>
       </div>
 
-      <div class="am-g">
+      <div class="am-g" id="qqq">
       <div class="am-g">
         
         <form action="{{url('admin/user/index')}}" method="get">
@@ -51,8 +55,8 @@
               <td>
                 <div class="am-btn-toolbar">
                     <div class="am-btn-group am-btn-group-xs">
-                      <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span><a href="edit/{{$v->admin_id}}">编辑</a></button>
-                      <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> <a href="del/{{$v->admin_id}}">删除</a></button>
+                      <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span><a href="javascript:;" onclick="aa({{$v->admin_id}})">编辑</a></button>
+                      <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> <a href="javascript:;" onclick="user({{$v->admin_id}})">删除</a></button>
                     </div>
                   </div>
               </td>
@@ -62,8 +66,7 @@
             </tbody>
           </table>
         </div>
-        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
-
+        <script type="text/javascript" src="{{asset('http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js')}}"></script>
       		<div class="am-fr">
       			<ul id="sunjia" class="am-pagination">
       			<li class="am-disabled">
@@ -71,9 +74,61 @@
                 </li>
                 </ul>
             </div>
-            <script type="text/javascript">
-	
-			$("#sunjia li ul").attr('class','am-pagination');
-		</script>
+
   </div>
+              <script type="text/javascript">
+              
+                function user(id) {
+                    layer.alert('内容');
+            //询问框
+                  layer.confirm('您确认删除吗？', {
+                      btn: ['确认','取消'] //按钮
+                  }, function(){
+//                如果用户发出删除请求，应该使用ajax向服务器发送删除请求
+//                $.get("请求服务器的路径","携带的参数", 获取执行成功后的额返回数据);
+                //admin/user/1
+                $.ajax({
+                  type:"post",
+
+                  url:"{{url('admin/user/del')}}/"+id,
+                  data:{"_token":"{{csrf_token()}}"},
+
+                  success: function(data){
+                    if(data.error == 0){
+                       //console.log("错误号"+res.error);
+                       //console.log("错误信息"+res.msg);
+                       layer.msg(data.msg, {icon: 6});
+//                       location.href = location.href;
+                       var t=setTimeout("location.href = location.href;",2000);
+                   }else{
+                       layer.msg(data.msg, {icon: 5});
+
+                       var t=setTimeout("location.href = location.href;",2000);
+                       //location.href = location.href;
+                   }
+
+                  }, 
+
+                  dataType:"json",
+                });
+            });
+        }
+
+        function aa(id) {
+                    layer.alert('内容');
+            //询问框
+                  layer.confirm('您确认更改吗？', {
+                      btn: ['确认','取消'] //按钮
+                  }, function(){
+// //                如果用户发出删除请求，应该使用ajax向服务器发送删除请求
+// //                $.get("请求服务器的路径","携带的参数", 获取执行成功后的额返回数据);
+//                 //admin/user/1
+                    // redirect('{{asset('/admin/user/edit')}}/'+id);
+                    $(location).attr('href', '{{asset('/admin/user/edit')}}/'+id);
+//                
+                    });
+//            
+                  }
+                
+        </script>
  @stop
