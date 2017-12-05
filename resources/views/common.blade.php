@@ -314,13 +314,13 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
-                                <a href="table-font-list.html">
+                                <a href="{{url('/admin/article/add')}}">
                                     <i class="am-icon-angle-right"></i>
                                     <span>添加文章</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
-                                <a href="table-images-list.html">
+                                <a href="{{url('/admin/article/index')}}">
                                     <i class="am-icon-angle-right"></i>
                                     <span>文章列表</span>
                                     <i class="tpl-left-nav-content tpl-badge-success">

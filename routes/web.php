@@ -49,3 +49,14 @@ Route::post('home/dologin', 'Home\LoginController@dologin');
 
 // 前台显示
 Route::get('home/hindex','Home\BlogController@index');
+
+
+
+
+
+
+
+
+//文章模块
+Route::get('admin/article/index','Admin\ArticleController@index');
+Route::get('admin/article/add','Admin\ArticleController@add');
