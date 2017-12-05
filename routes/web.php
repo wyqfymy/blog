@@ -21,12 +21,16 @@ Route::get('admin/user/edit/{id}','Admin\UserController@edit');
 Route::post('admin/user/update/{id}','Admin\UserController@update');
 Route::post('admin/user/del/{id}','Admin\UserController@destroy');
 
+// 分类模块
 
 // =======
 Route::get('/', function () {
     return view('admin.index');
 });
 
+
+// 文章模块
+// Route::resource('article','ArticleController');
 //菜单路由
 //Route::get('/admin/menu/add', 'Admin\MenuController@add');
 //Route::post('/admin/menu/insert', 'Admin\MenuController@insert');
@@ -49,3 +53,10 @@ Route::post('home/dologin', 'Home\LoginController@dologin');
 
 // 前台显示
 Route::get('home/hindex','Home\BlogController@index');
+Route::get('home/zc','Home\BlogController@register');
+Route::post('home/dozc','Home\BlogController@doregister');
+Route::post('home/uname','Home\BlogController@ajaxuname');
+Route::post('home/uphone','Home\BlogController@ajaxuphone');
+Route::post('home/uemail','Home\BlogController@ajaxuemail');
+Route::post('home/upassword','Home\BlogController@ajaxupassword');
+Route::post('home/urepassword','Home\BlogController@ajaxurepassword');

@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
+        <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
         <!-- CSS -->
         <!-- <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'> -->
@@ -43,13 +45,13 @@
             #nnn{
                 position:relative;
                 width:100px;
-                left:-7px;
+                left:3px;
                 top:14px;
             }
             #vvv{
                 position:relative;
                 width:100px;
-                left:208px;
+                left:204px;
                 top:-71px;
             }
             #error{
@@ -108,12 +110,18 @@
                 <button type="submit">登录</button>
                 </li>
                 <li id="vvv">
-                    <a href="">立即注册</a>
+                    <a href="{{asset('/home/zc')}}">立即注册</a>
                 </li>
             </ul>
             </form>
             
         </div>
+            <div class="bj_right">
+                <p>使用以下账号直接登录</p>
+                <a href="#" class="glyphicon glyphicon-user">QQ登录</a>
+                <a href="#" class="zhuce_wb">微博登录</a>
+                <a href="#" class="zhuce_wx">微信登录</a>
+            </div>
 
 
         <!-- Javascript -->
