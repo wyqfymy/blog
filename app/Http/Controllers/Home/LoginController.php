@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Home;
 //控制器用的所有的类都需要引入
 //表单验证的门面类 如不在config/app.对这个类重命名成这样类似DB的话 需要引入
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash; //引哈希加密
-use App\Model\User;
+use App\Model\Home_user;
 //引入模板User Upser.php(里面主要写了表名 主键名 可修改字段 是否有时间段)
 //use App\Http\Request;
 //
@@ -29,7 +29,7 @@ class LoginController extends Controller
      */
     public function login()
     {
-    	return view('admin.login.login');
+    	return view('home.login.login');
     }
     public function yzm()
     {
@@ -69,55 +69,51 @@ class LoginController extends Controller
         //Validator::make(要验证的数据，验证规则，提示信息)
         //参数一 要验证的数据
         $input = $request->except('_token');
-     
+        // dd($input);
+//        print_r($input);
         //参数二 验证规则
         $rule = [
-            'admin_name' => 'required|between:4,50',
-            'admin_password' => 'required|between:3,20',
+            'uname' => 'required|between:4,50',
+            'upassword' => 'required|between:3,20',
         ];
         //参数三 提示信息
         $massage = [
-            'admin_name.require' => '用户名必须输入',
-            'admin_name.between'=>'用户名必须在3到20位之间',
-            'admin_password.require'=>'密码必须输入',
-            'admin_password.between'=>'密码必须在4到20位之间',
+            'uname.require' => '用户名必须输入',
+            'uname.between'=>'用户名必须在3到20位之间',
+            'upassword.require'=>'密码必须输入',
+            'upassword.between'=>'密码必须在4到20位之间',
         ];
        $validator = Validator::make($input, $rule, $massage);
        //如果表单验证失败fails()  成功(passes() )
        if($validator->fails()){
            //失败的话 重定向调到登录页 并携带错误信息及 表单信息
-            return redirect('/admin/login')
+            return redirect('/home/hlogin')
                     ->withErrors($validator)
                     ->withInput();
        }
        //规则验证成功 判断数据库中是否有该用户
        //1. 判断验证码是否正确
        if($input['code'] != Session::get('code')){
-           return redirect('admin/login')->with('errors','验证码错误,请重新输入');
+           return redirect('home/hlogin')->with('errors','验证码错误,请重新输入');
        }
        //2.判断用户名和密码是否存在(前面引入模型User 下面直接使用)
-        $user = User::where('admin_name',$input['admin_name'])->first();
+        $user = home_user::where('uname',$input['uname'])->first();
         if(!$user){
-            return redirect('admin/login')->with('errors','用户名不存在,请重新输入');
+            return redirect('home/hlogin')->with('errors','用户名不存在,请重新输入');
         }
-        if($user['admin_password'] != $input['admin_password']){
-            return redirect('admin/login')->with('errors','密码错误,请重新输入');
+        if($user['upassword'] != $input['upassword']){
+            return redirect("{{asset('home/hlogin')}}")->with('errors','密码错误,请重新输入');
         }else{
-
-            Session::put('user', $user);
-            // dd(Session::get('user'));
-            return redirect('admin/user/index');
+            return redirect('home/hindex');
         }
 
        //获取密码加密与数据库进行比较
-       // $admin_password = Hash::make($user['admin_password']);
-       // if(Hash::check($admin_password, $input['admin_password'])){
-       //  //with后的errors用session获取
-       //     return redirect('admin/login')->with('errors','密码错误,请重新输入');
-       // }else{
-
-       //     // return redirect('admin/index');
-       // }
+       $admin_password = Hash::make($user['admin_password']);
+       if(Hash::check($admin_password, $input['admin_password'])){
+           return redirect('home/login')->with('errors','密码错误,请重新输入');
+       }else{
+           return redirect('/home/hindex');
+       }
 
     }
 

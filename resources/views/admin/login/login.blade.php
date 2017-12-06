@@ -53,11 +53,11 @@
                 <li>
                     <input type="text" class="code" name="code" placeholder="验证码"/>
                     <span><i class="fa fa-check-square-o"></i></span>
-                    {{--onclick后面的目的是 点击的时候(带?后面参数)浏览器认为一个新的地址会重新请求
-                    不带参数的话浏览一次后,浏览器会在本地缓存中找 不会像远程请求 - (路径没改变 参数变化)-}}
-                    {{--<img src="{{url('admin/yzm')}}" onclick="this.src='{{url('admin/yzm')}}?' + Math.random()" alt="">--}}
+                    <!-- {{--onclick后面的目的是 点击的时候(带?后面参数)浏览器认为一个新的地址会重新请求 -->
+                    <!-- 不带参数的话浏览一次后,浏览器会在本地缓存中找 不会像远程请求 - (路径没改变 参数变化)-}} -->
+                    <!-- {{--<img src="{{url('admin/yzm')}}" onclick="this.src='{{url('admin/yzm')}}?' + Math.random()" alt="">--}} -->
 
-                    {{--单击触发 下面re_captcha方法 用captcha php中要有gdk库--}}
+                    <!-- {{--单击触发 下面re_captcha方法 用captcha php中要有gdk库--}} -->
                     <a onclick="javascript:re_captcha();">
                         <img src="{{ URL('code/captcha/98') }}" id="127ddf0de5a04167a9e427d883690ff6" alt="电磁">
                     </a>
