@@ -20,6 +20,7 @@ use App\Org\code\Code;  //命名空间 App\Org\code\类名  类似于 use DB
 use Gregwar\Captcha\CaptchaBuilder;
 use Gregwar\Captcha\PhraseBuilder;
 
+
 class LoginController extends Controller
 {
     /**
@@ -103,16 +104,19 @@ class LoginController extends Controller
         if($user['admin_password'] != $input['admin_password']){
             return redirect('admin/login')->with('errors','密码错误,请重新输入');
         }else{
+            // dd($user);
+            session(['user' => $user]);
             return redirect('admin/user/index');
         }
 
        //获取密码加密与数据库进行比较
-       $admin_password = Hash::make($user['admin_password']);
-       if(Hash::check($admin_password, $input['admin_password'])){
-           return redirect('admin/login')->with('errors','密码错误,请重新输入');
-       }else{
-           return redirect('admin/index');
-       }
+       // $admin_password = Hash::make($user['admin_password']);
+       // if(Hash::check($admin_password, $input['admin_password'])){
+       //     return redirect('admin/login')->with('errors','密码错误,请重新输入');
+       // }else{
+       //      // dd($input);
+       //     return redirect('admin/index');
+       // }
 
     }
 

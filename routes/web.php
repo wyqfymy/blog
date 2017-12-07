@@ -12,21 +12,71 @@
 */
 
 // <<<<<<< HEAD
-// 后台用户
-// // 
-Route::get('/admin/user/create','Admin\UserController@create');
-Route::post('/admin/user/store','Admin\UserController@store');
-Route::get('/admin/user/index','Admin\UserController@index');
-Route::get('admin/user/edit/{id}','Admin\UserController@edit');
-Route::post('admin/user/update/{id}','Admin\UserController@update');
-Route::post('admin/user/del/{id}','Admin\UserController@destroy');
 
-// 分类模块
+
+
 
 // =======
 Route::get('/', function () {
     return view('admin.index');
 });
+
+	// 后台登录
+	Route::get('admin/login', 'Admin\LoginController@login');
+	Route::get('admin/yzm', 'Admin\LoginController@yzm');
+	Route::get('code/captcha/{tmp}', 'Admin\LoginController@captcha');
+	Route::post('admin/dologin', 'Admin\LoginController@dologin');
+
+// 后台用户的查看
+	Route::get('/admin/user/index','Admin\UserController@index');
+// Route::group(['middleware'=>['hasrole']],function(){
+	// 角色管理
+	Route::get('role/auth/{id}','Admin\RoleController@auth');
+	Route::post('role/doauth','Admin\RoleController@doauth');
+	Route::resource('role','Admin\RoleController');
+	// 权限查看
+	Route::get('pindex','Admin\RoleController@pindex');
+	// 权限添加
+	Route::get('padd','Admin\RoleController@padd');
+	// 权限添加更新
+	Route::post('pdoadd','Admin\RoleController@pdoadd');
+	// 权限的修改
+	Route::get('pedit/{id}','Admin\RoleController@pedit');
+	// 权限修改的处理
+	Route::get('pupdate/{id}','Admin\RoleController@pupdate');
+	// 权限的删除
+	Route::post('pdel/{id}','Admin\RoleController@pdel');
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// 后台用户
+
+	Route::get('/admin/user/create','Admin\UserController@create');
+	Route::post('/admin/user/store','Admin\UserController@store');
+	Route::get('admin/user/edit/{id}','Admin\UserController@edit');
+	Route::post('admin/user/update/{id}','Admin\UserController@update');
+	Route::post('admin/user/del/{id}','Admin\UserController@destroy');
+	Route::get('role/urole/{id}','Admin\UserController@urole');
+	Route::get('admin/user/dourole/{id}','Admin\UserController@dourole');
+
+
+// });
+
+
+
+
+// Route::get('/role/delete/{id}','RoleController@delete');
+
 
 
 // 文章模块
@@ -36,10 +86,7 @@ Route::get('/', function () {
 //Route::post('/admin/menu/insert', 'Admin\MenuController@insert');
 //Route::get('/admin/menu/index', 'Admin\MenuController@index');
 
-Route::get('admin/login', 'Admin\LoginController@login');
-Route::get('admin/yzm', 'Admin\LoginController@yzm');
-Route::get('code/captcha/{tmp}', 'Admin\LoginController@captcha');
-Route::post('admin/dologin', 'Admin\LoginController@dologin');
+
 // >>>>>>> origin/lwx
 
 // 前台登录

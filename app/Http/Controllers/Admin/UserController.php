@@ -7,9 +7,70 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
-
+use App\Model\Role;
+use DB;
 class UserController extends Controller
 {
+
+    /**
+     * 返回用户授角色的页面
+     *
+     */
+    public function urole($id)
+    {
+      // 获取当前的用户
+      $user = User::find($id);
+
+      // 获取所有的角色
+      $role = Role::get();
+
+      // 获取当前的用户被赋予的角色
+      // DB中查询用户的角色表,当用户的id等于传来的id,列出所有的角色id
+       $b = DB::table('role_user')->where('uid',$id)->first();
+        if (empty($b)){
+            $a = [];
+        }else{
+
+
+            $own_role = DB::table('role_user')->where('uid',$id)->get(  );
+            
+
+
+            foreach ($own_role as $key => $value) {
+                 $a[] = $value->role_id;
+            }
+        }
+    // dd($a);
+    // dd($own_permissions);
+
+        return view('admin.role.urole',compact('user','role','a'));
+    }
+
+
+    public function dourole(Request $request,$id)
+    {
+      // 接受用户提交的数据
+      $input = $request->except('_token');
+      // dd($input);
+      // dd($id);
+      DB::beginTransaction();
+      try{
+        // 删除用户以前拥有的权限
+        DB::table('role_user')->where('uid',$id)->delete();
+        // 给当前的用户从新授权
+        // 将授权的数据添加到role_p表中
+        if(isset($input['role_id'])){
+                foreach ($input['role_id'] as $k=>$v){
+                    DB::table('role_user')->insert(['uid' => $id, 'role_id' =>$v]);
+                }
+            }
+      }catch (Exception $e){
+            DB::rollBack();
+        }
+        DB::commit();
+        return redirect('/admin/user/index');
+    }
+
     /**
      * Display a listing of the resource.
      *

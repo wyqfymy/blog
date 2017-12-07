@@ -210,7 +210,39 @@
                                     <i class="tpl-left-nav-content tpl-badge-success"></i>  
                             </li>
                         </ul>
-                    </li>
+
+                             <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-table"></i>
+                            <span>角色权限管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+                                <a href="{{asset('role')}}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>角色列表</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="{{asset('role/create')}}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>添加角色</span>
+                                    <i class="tpl-left-nav-content tpl-badge-success"></i>
+                                </a>
+                                <a href="{{asset('pindex')}}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>权限列表</span>
+                                    <i class="tpl-left-nav-content tpl-badge-success"></i>
+                                </a>
+                                <a href="{{asset('padd')}}">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>添加权限</span>
+                                    <i class="tpl-left-nav-content tpl-badge-success"></i>
+                            </li>
+                        </ul>
+                        
+                    
       <li class="tpl-left-nav-item">
                         <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-table"></i>
