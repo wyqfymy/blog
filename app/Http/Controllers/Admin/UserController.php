@@ -3,10 +3,15 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Model\User;
+<<<<<<< HEAD
+=======
+use Session;
+>>>>>>> blog/lwx
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
+<<<<<<< HEAD
 use App\Model\Role;
 use DB;
 class UserController extends Controller
@@ -71,6 +76,11 @@ class UserController extends Controller
         return redirect('/admin/user/index');
     }
 
+=======
+
+class UserController extends Controller
+{
+>>>>>>> blog/lwx
     /**
      * Display a listing of the resource.
      *
@@ -79,7 +89,10 @@ class UserController extends Controller
     public function index(Request $request)
     {
         //查数据
+<<<<<<< HEAD
         // dd($request);
+=======
+>>>>>>> blog/lwx
         $data = User::orderBy('admin_id','asc')
             ->where(function($query) use($request){
                 //检测关键字
@@ -102,6 +115,10 @@ class UserController extends Controller
      */
     public function create()
     {
+<<<<<<< HEAD
+=======
+        // dd(Session::get('user'));
+>>>>>>> blog/lwx
         return view('admin/user/create');
     }
 

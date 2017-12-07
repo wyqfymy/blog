@@ -7,6 +7,7 @@
     <title>后台管理</title>
     <meta name="description" content="这是一个 index 页面">
     <script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<<<<<<< HEAD
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
         <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -15,6 +16,16 @@
 
         <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
         <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+=======
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+>>>>>>> blog/lwx
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
@@ -25,8 +36,15 @@
     <link rel="stylesheet" href="{{asset('assets/css/amazeui.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/admin.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
+<<<<<<< HEAD
     <script src="{{asset('assets/js/echarts.min.js')}}"></script>
     <script src="{{asset('layer/layer.js')}}"></script>
+=======
+    <!-- 引入jquery 和layer -->
+    <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+    <script src="{{asset('layer/layer.js')}}"></script>
+
+>>>>>>> blog/lwx
 </head>
 
 <body data-type="index">
@@ -210,6 +228,7 @@
                                     <i class="tpl-left-nav-content tpl-badge-success"></i>  
                             </li>
                         </ul>
+<<<<<<< HEAD
 
                              <li class="tpl-left-nav-item">
                         <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
@@ -243,6 +262,9 @@
                         </ul>
                         
                     
+=======
+                    </li>
+>>>>>>> blog/lwx
       <li class="tpl-left-nav-item">
                         <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-table"></i>
@@ -251,13 +273,21 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
+<<<<<<< HEAD
                                 <a href="table-font-list.html">
+=======
+                                <a href="{{url('/admin/cate')}}">
+>>>>>>> blog/lwx
                                     <i class="am-icon-angle-right"></i>
                                     <span>导航列表</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
+<<<<<<< HEAD
                                 <a href="table-images-list.html">
+=======
+                                <a href="{{url('/admin/cate/create')}}">
+>>>>>>> blog/lwx
                                     <i class="am-icon-angle-right"></i>
                                     <span>添加导航</span>
                                     <i class="tpl-left-nav-content tpl-badge-success">
@@ -442,10 +472,19 @@
 
 
 <!-- <<<<<<< HEAD -->
+<<<<<<< HEAD
     <script src="{{asset('assets/js/jquery.min.js')}}"></script>
     <script src="{{asset('assets/js/amazeui.min.js')}}"></script>
     <script src="{{asset('assets/js/iscroll.js')}}"></script>
     <script src="{{asset('assets/js/app.js')}}"></script>
+=======
+   
+    <script src="{{asset('assets/js/amazeui.min.js')}}"></script>
+    <script src="{{asset('assets/js/iscroll.js')}}"></script>
+    <script src="{{asset('assets/js/app.js')}}"></script>
+    <script src="{{asset('assets/js/echarts.min.js')}}"></script>
+    
+>>>>>>> blog/lwx
 <!-- ======= -->
 
 </body>

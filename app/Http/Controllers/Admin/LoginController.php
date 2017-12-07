@@ -20,7 +20,10 @@ use App\Org\code\Code;  //命名空间 App\Org\code\类名  类似于 use DB
 use Gregwar\Captcha\CaptchaBuilder;
 use Gregwar\Captcha\PhraseBuilder;
 
+// <<<<<<< HEAD
 
+// =======
+// >>>>>>> blog/lwx
 class LoginController extends Controller
 {
     /**
@@ -70,7 +73,11 @@ class LoginController extends Controller
         //Validator::make(要验证的数据，验证规则，提示信息)
         //参数一 要验证的数据
         $input = $request->except('_token');
-//        print_r($input);
+// <<<<<<< HEAD
+// //        print_r($input);
+// =======
+     
+// >>>>>>> blog/lwx
         //参数二 验证规则
         $rule = [
             'admin_name' => 'required|between:4,50',
@@ -104,18 +111,32 @@ class LoginController extends Controller
         if($user['admin_password'] != $input['admin_password']){
             return redirect('admin/login')->with('errors','密码错误,请重新输入');
         }else{
+// <<<<<<< HEAD
             // dd($user);
             session(['user' => $user]);
+// =======
+
+            Session::put('user', $user);
+            // dd(Session::get('user'));
+// >>>>>>> blog/lwx
             return redirect('admin/user/index');
         }
 
        //获取密码加密与数据库进行比较
        // $admin_password = Hash::make($user['admin_password']);
        // if(Hash::check($admin_password, $input['admin_password'])){
+// <<<<<<< HEAD
        //     return redirect('admin/login')->with('errors','密码错误,请重新输入');
        // }else{
        //      // dd($input);
        //     return redirect('admin/index');
+// =======
+       //  //with后的errors用session获取
+       //     return redirect('admin/login')->with('errors','密码错误,请重新输入');
+       // }else{
+
+       //     // return redirect('admin/index');
+// >>>>>>> blog/lwx
        // }
 
     }

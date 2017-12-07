@@ -75,9 +75,14 @@ input:focus {
 }
 
 button {
+<<<<<<< HEAD
     
     cursor: pointer;
     width: 266px;
+=======
+    cursor: pointer;
+    width: 300px;
+>>>>>>> blog/lwx
     height: 44px;
     margin-top: 25px;
     padding: 0;

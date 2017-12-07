@@ -18,6 +18,7 @@
 
 // =======
 Route::get('/', function () {
+// <<<<<<< HEAD
     return view('admin.index');
 });
 
@@ -46,15 +47,6 @@ Route::get('/', function () {
 	Route::get('pupdate/{id}','Admin\RoleController@pupdate');
 	// 权限的删除
 	Route::post('pdel/{id}','Admin\RoleController@pdel');
-
-
-
-
-
-
-
-
-
 
 
 
@@ -88,6 +80,39 @@ Route::get('/', function () {
 
 
 // >>>>>>> origin/lwx
+// // =======
+//     	return view('welcome');
+// 	});
+//后台登录页
+Route::get('admin/login', 'Admin\LoginController@login');
+Route::get('admin/yzm', 'Admin\LoginController@yzm');
+Route::get('code/captcha/{tmp}', 'Admin\LoginController@captcha');
+Route::post('admin/dologin', 'Admin\LoginController@dologin');
+
+//后台登录中间件
+Route::group(['middleware'=>'islogin'], function(){
+	//后台首页
+	// dd(Session::get('user'));
+	Route::get('admin/index', function () {
+    	return view('admin.index');
+	});
+	//后台用户模块
+	Route::get('/admin/user/create','Admin\UserController@create');
+	Route::post('/admin/user/store','Admin\UserController@store');
+	Route::get('/admin/user/index','Admin\UserController@index');
+	Route::get('admin/user/edit/{id}','Admin\UserController@edit');
+	Route::post('admin/user/update/{id}','Admin\UserController@update');
+	Route::post('admin/user/del/{id}','Admin\UserController@destroy');
+	Route::resource('admin/cate','Admin\CateController');
+	
+	// Route::resource('admin/cate','Admin\TestController');
+
+	Route::post('admin/cate/changeorder','Admin\CateController@changeOrder');
+
+
+});
+
+// >>>>>>> blog/lwx
 
 // 前台登录
 Route::get('home/hlogin','Home\LoginController@login');
@@ -99,6 +124,7 @@ Route::post('home/dologin', 'Home\LoginController@dologin');
 // });
 
 // 前台显示
+// <<<<<<< HEAD
 Route::get('home/hindex','Home\BlogController@index');
 Route::get('home/zc','Home\BlogController@register');
 Route::post('home/dozc','Home\BlogController@doregister');
@@ -107,3 +133,6 @@ Route::post('home/uphone','Home\BlogController@ajaxuphone');
 Route::post('home/uemail','Home\BlogController@ajaxuemail');
 Route::post('home/upassword','Home\BlogController@ajaxupassword');
 Route::post('home/urepassword','Home\BlogController@ajaxurepassword');
+// =======
+Route::get('home/hindex','Home\BlogController@index');
+// >>>>>>> blog/lwx

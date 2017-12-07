@@ -57,7 +57,10 @@
                     <div class="am-btn-group am-btn-group-xs">
                       <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span><a href="javascript:;" onclick="aa({{$v->admin_id}})">编辑</a></button>
                       <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> <a href="javascript:;" onclick="user({{$v->admin_id}})">删除</a></button>
+<<<<<<< HEAD
                       <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span><a href="{{asset('role/urole/'.$v->admin_id)}}">授权</a></button>
+=======
+>>>>>>> blog/lwx
                     </div>
                   </div>
               </td>

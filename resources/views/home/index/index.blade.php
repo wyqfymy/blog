@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<<<<<<< HEAD
     <link type="text/css" media="all" href="{{asset('home/index/css/autoptimize_2b0d4df713b8dbc54e6fc1c4b5b7e160_1.css')}}" rel="stylesheet" />
+=======
+    <link type="text/css" media="all" href="css/autoptimize_2b0d4df713b8dbc54e6fc1c4b5b7e160_1.css" rel="stylesheet" />
+>>>>>>> blog/lwx
     <title>欲思博客- 关注前端和WordPress,分享福利和心得！</title>
     <script>window._deel = {
         name: '欲思博客',
@@ -20,17 +24,31 @@
       }</script>
     <link rel='dns-prefetch' href='//libs.baidu.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
+<<<<<<< HEAD
 
+=======
+    <script type='text/javascript' src='js/jquery.min_1.js'></script>
+    <script type='text/javascript' src='js/jquery_1.js'></script>
+>>>>>>> blog/lwx
     <link rel='https://api.w.org/' href='https://yusi123.com/wp-json/' />
     <meta name="keywords" content="欲思博客,网赚博客,福利,wordpress教程,前端开发">
     <meta name="description" content="欲思博客是一个关注前端开发、网站建设、wordpress主题的独立博客，有时也分享一些个人福利和网络赚钱心得！">
     <!--[if lt IE 9]>
+<<<<<<< HEAD
       <script <img src="{{asset('home/index/js/html5_1.js')}}"></script>
       <script <img src="{{asset('home/index/js/selectivizr-min_1.js')}}"></script>
     <![endif]-->
     <!--[if lte IE 8]>
     <![endif]-->
     <script src="{{asset('home/index/js/selectivizr-min_1.js')}}"></script>
+=======
+      <script src="js/html5_1.js"></script>
+      <script src="js/selectivizr-min_1.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <![endif]-->
+    <script src="js/selectivizr-min_1.js"></script>
+>>>>>>> blog/lwx
   </head>
   
   <body class="home blog">
@@ -139,6 +157,7 @@
               <ul>
                 <li>
                   <a target="_blank" href="https://yusi123.com/3683.html" title="10个方法帮你搞定Web设计风格指南">
+<<<<<<< HEAD
                     <img <img src="{{asset('home/index/picture/shejifengge_1.jpg')}}" title="10个方法帮你搞定Web设计风格指南" alt="10个方法帮你搞定Web设计风格指南" /></a>
                 </li>
                 <li>
@@ -152,12 +171,28 @@
                 <li>
                   <a target="_blank" href="https://yusi123.com/2905.html" title="利用七牛云存储CDN服务给WordPress静态文件加速">
                     <img <img src="" title="利用七牛云存储CDN服务给WordPress静态文件加速" alt="利用七牛云存储CDN服务给WordPress静态文件加速" /></a>
+=======
+                    <img src="picture/shejifengge_1.jpg" title="10个方法帮你搞定Web设计风格指南" alt="10个方法帮你搞定Web设计风格指南" /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://yusi123.com/3656.html" title="30种症状证明你应该离开电脑到户外走走">
+                    <img src="picture/outdoor-life_1.jpg" title="30种症状证明你应该离开电脑到户外走走" alt="30种症状证明你应该离开电脑到户外走走" /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://yusi123.com/3153.html" title="20个让你爱不释手的汉堡菜单设计风格网站示例欣赏">
+                    <img src="picture/pollenlondon_1.jpg" title="20个让你爱不释手的汉堡菜单设计风格网站示例欣赏" alt="20个让你爱不释手的汉堡菜单设计风格网站示例欣赏" /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://yusi123.com/2905.html" title="利用七牛云存储CDN服务给WordPress静态文件加速">
+                    <img src="picture/wordpress-qiniu-cdn_1.gif" title="利用七牛云存储CDN服务给WordPress静态文件加速" alt="利用七牛云存储CDN服务给WordPress静态文件加速" /></a>
+>>>>>>> blog/lwx
                 </li>
               </ul>
             </div>
             <div class="ws_thumbs">
               <div>
                 <a target="_blank" href="#" title="10个方法帮你搞定Web设计风格指南">
+<<<<<<< HEAD
                   <img <img src="{{asset('home/index/picture/timthumb_1.php')}}" /></a>
                 <a target="_blank" href="#" title="30种症状证明你应该离开电脑到户外走走">
                   <img <img src="{{asset('home/index/picture/timthumb_1.php')}}" /></a>
@@ -165,13 +200,30 @@
                   <img <img src="{{asset('home/index/picture/timthumb_1.php')}}" /></a>
                 <a target="_blank" href="#" title="利用七牛云存储CDN服务给WordPress静态文件加速">
                   <img <img src="{{asset('home/index/picture/timthumb_1.php')}}" /></a>
+=======
+                  <img src="picture/timthumb_1.php" /></a>
+                <a target="_blank" href="#" title="30种症状证明你应该离开电脑到户外走走">
+                  <img src="picture/timthumb_1.php" /></a>
+                <a target="_blank" href="#" title="20个让你爱不释手的汉堡菜单设计风格网站示例欣赏">
+                  <img src="picture/timthumb_1.php" /></a>
+                <a target="_blank" href="#" title="利用七牛云存储CDN服务给WordPress静态文件加速">
+                  <img src="picture/timthumb_1.php" /></a>
+>>>>>>> blog/lwx
               </div>
             </div>
             <div class="ws_shadow"></div>
           </div>
+<<<<<<< HEAD
          
           <div class="banner banner-sticky">
             
+=======
+          <script type="text/javascript" src="js/slider_1.js"></script>
+          <div class="banner banner-sticky">
+            <script type="text/javascript">/*多彩标签云 860*80 创建于 2017/9/22*/
+              var cpro_id = "u3102363";</script>
+            <script type="text/javascript" src="js/c.js"></script>
+>>>>>>> blog/lwx
           </div>
           <div class="hot-posts">
             <h2 class="title">本周热门排行</h2>
@@ -187,7 +239,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3831.html">
+<<<<<<< HEAD
                 <img class="thumb" <img src="{{asset('home/index/picture/timthumb_1.php')}}" alt="Linux系统vi(vim)编辑器命令使用教程简单介绍" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="Linux系统vi(vim)编辑器命令使用教程简单介绍" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">vi(vim)是上Linux非常常用的代码编辑器，很多Linux发行版都默认安装了vi(vim)。vi(vim)命令繁多但是如果使用灵活之后将会大大提高效率。vi是“visual interface”的缩写，vim是vi IMproved(增强版的vi)。在一般的系统管理维护中v...</span>
             <p class="auth-span">
@@ -213,7 +269,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3829.html">
+<<<<<<< HEAD
                 <img class="thumb" src="{{asset('home/index/picture/timthumb_1.php')}}" alt="Linux系统 Crontab命令 安装配置使用详细说明" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="Linux系统 Crontab命令 安装配置使用详细说明" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">Crontab命令常见于Unix和Linux的操作系统之中，用于设置周期性被执行的指令。该命令从标准输入设备读取指令，并将其存放于“crontab”文件中，以供之后读取和执行。通常，crontab储存的指令被守护进程激活。crond 常常在后台运行，每一分钟检查是否有预定的作业需...</span>
             <p class="auth-span">
@@ -239,7 +299,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3808.html">
+<<<<<<< HEAD
                 <img class="thumb" src="{{asset('home/index/picture/timthumb_1.php')}}" alt="WordPress绑定多个域名和禁止搜索引擎收录非主域名的方法" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="WordPress绑定多个域名和禁止搜索引擎收录非主域名的方法" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">最近在弄一个WordPress外贸企业站，遇到了一些问题，发出来给大家参考一下。 WordPress绑定多个域名 客户网站绑定了多个域名，部分域名都直接做301重定向跳转到主域名。但是客户的主域名在做Google AdWords推广的时候被封禁了，所以要求启用其他域名绑定来做Go...</span>
             <p class="auth-span">
@@ -265,10 +329,17 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3798.html">
+<<<<<<< HEAD
                 <img class="thumb" src="{{asset('home/index/picture/timthumb_1.php')}}" alt="115网盘福利：Chrome浏览器使用Console代码免扫二维码登陆" /></a>
             </div>
             <span class="note">好久没有用115网盘了。今天刚好弄点资料需要用到，发现官网必须使用115浏览器或者用手机扫描二维码才能登陆网站。 现在好多网盘都死了，规矩越来越多了也没办法，异地登陆都需要验证短信什么的。不过还是感觉好繁琐。没找到什么好办法的只能老实下载软件了。不信邪了的在网上折腾了一下，找...</span>
             <p class="auth-span"> 
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="115网盘福利：Chrome浏览器使用Console代码免扫二维码登陆" /></a>
+            </div>
+            <span class="note">好久没有用115网盘了。今天刚好弄点资料需要用到，发现官网必须使用115浏览器或者用手机扫描二维码才能登陆网站。 现在好多网盘都死了，规矩越来越多了也没办法，异地登陆都需要验证短信什么的。不过还是感觉好繁琐。没找到什么好办法的只能老实下载软件了。不信邪了的在网上折腾了一下，找...</span>
+            <p class="auth-span">
+>>>>>>> blog/lwx
               <span class="muted">
                 <i class="fa fa-clock-o"></i>1年前 (2016-07-01)</span>
               <span class="muted">
@@ -291,7 +362,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3795.html">
+<<<<<<< HEAD
                 <img class="thumb" src="{{asset('home/index/picture/timthumb_1.php')}}" alt="升级WordPress时遇到&#8217;另一更新正在进行&#8217;如何解决" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="升级WordPress时遇到&#8217;另一更新正在进行&#8217;如何解决" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">我相信很多人在使用WordPress升级程序的时候最为讨厌他们经常的更新和升级，如果你不升级吧万一有安全问题，万一你升级吧可能会出现各种各样的问题。 我们最为喜欢的方式是在登入后台的时候看到有新版本提醒之后直接点击在线升级，包括我也一样这样省心省力。但是这样也是最为容易出现问题的...</span>
             <p class="auth-span">
@@ -317,7 +392,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3734.html">
+<<<<<<< HEAD
                 <img class="thumb" src="{{asset('home/index/picture/timthumb_1.php')}}" alt="限量阿里云推荐码一枚 首次购买ECS和RDS享原价9折优惠" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="限量阿里云推荐码一枚 首次购买ECS和RDS享原价9折优惠" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">限量阿里云推荐码一枚，分享给有需要的朋友。首次购买包年包月云服务器ECS和云数据库RDS的朋友，使用推荐码可享受原价9折优惠。 当然，用了我的推荐码的，我这边也会收到实际支付订单金额*10%的阿里云代金券返利。 这是两利的事情，有需要的朋友可以拿走，比起原价来还是能节省不少的费用...</span>
             <p class="auth-span">
@@ -343,7 +422,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3785.html">
+<<<<<<< HEAD
                 <img class="thumb" src="{{asset('home/index/picture/timthumb_1.php')}}" alt="WordPress 禁止将英文半角符号转换成全角符号（字符转义）" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="WordPress 禁止将英文半角符号转换成全角符号（字符转义）" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">今天客户的网站刚用到的，记录一下，以后就知道了。菜单选项的转义用the_title即可解决。 WordPress 模式使用了 wptexturize函数将纯文本字符转换成格式化的 HTML 实体。 标签 &lt;pre&gt;, &lt;code&gt;, &lt;kbd&gt...</span>
             <p class="auth-span">
@@ -369,7 +452,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3782.html">
+<<<<<<< HEAD
                 <img class="thumb" src="{{asset('home/index/picture/timthumb_1.php')}}" alt="LNMP环境下WordPress网站二级目录伪静态设置" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="LNMP环境下WordPress网站二级目录伪静态设置" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">今天在给客户网站做二级目录的分类，网站一直报错404，显示应该是伪静态问题。 看了下LNMP环境里的WordPress规则，貌似没有支持二级目录的。所以只好自己加一个了。 目前VPS主机中使用LNMP一键安装包搭建的环境都没有带二级目录的规则。 有需要的朋友可以复制下面的代码，...</span>
             <p class="auth-span">
@@ -395,7 +482,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3776.html">
+<<<<<<< HEAD
                 <img class="thumb" <img src="" alt="百度联盟再次抽风了 9个点击310元 这是什么节奏？" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="百度联盟再次抽风了 9个点击310元 这是什么节奏？" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">先来张宏哥的帅照。。。之前发过一次百度联盟抽风的文章，一个点击好几十，那时候就感觉挺惊人的了。 今天感觉脑子有点不够用了。百度联盟数据报告发来，感觉明显有点不正常。 &nbsp;进后台一看，显示其中有九个点击有三百多。尼玛，这是什么广告，单价这么高。怎么感觉过分高了点。 ...</span>
             <p class="auth-span">
@@ -421,7 +512,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3764.html">
+<<<<<<< HEAD
                 <img class="thumb" src="{{asset('home/index/picture/timthumb_1.php')}}" alt="防止WordPress利用xmlrpc.php进行暴力破解以及DDoS" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="防止WordPress利用xmlrpc.php进行暴力破解以及DDoS" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">早在2012 年 12 月 17 日一些采用 PHP 的知名博客程序 WordPress被曝光存在严重的漏洞，该漏洞覆盖WordPress 全部已发布的版本（包括WordPress 3.8.1）。该漏洞的 WordPress 扫描工具也在很多论坛和网站发布出来。工具可以利用 Wo...</span>
             <p class="auth-span">
@@ -447,7 +542,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3745.html">
+<<<<<<< HEAD
                 <img class="thumb" src="{{asset('home/index/picture/timthumb_1.php')}}" alt="知乎：身边有个漂亮的女程序员是什么体验？" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="知乎：身边有个漂亮的女程序员是什么体验？" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">从知乎上面看到的一个有趣的话题，关于女程序员的那些事。从一些屌丝们口中了解一下如果你的身边有一个女神级的程序员是一种什么样的感受呢？下面看看部分童鞋是怎么回答的。 袁德果，雅思考不过是怎么样的体验。我姐。 人在日本。 感觉就是会用很多高科技IT产品，然后智商很高，愿意尝试许多...</span>
             <p class="auth-span">
@@ -473,7 +572,11 @@
             </header>
             <div class="focus">
               <a target="_blank" href="https://yusi123.com/3736.html">
+<<<<<<< HEAD
                 <img class="thumb" <img src="" alt="借贷宝注册绑定银行卡，即可提现20元，亲测可用" /></a>
+=======
+                <img class="thumb" src="picture/timthumb_1.php" alt="借贷宝注册绑定银行卡，即可提现20元，亲测可用" /></a>
+>>>>>>> blog/lwx
             </div>
             <span class="note">借贷宝最近好像比较火了。。所以分享给大家，算是一个不错的赚零花钱的途径。人脉变钱脉，就能玩出钱！点击下面我的邀请注册链接，输入手机号，下载安装借贷宝， 注册后绑定银行卡，绑定后即可提现20元。 提现完成如果不想使用软件的话，记得解除银行卡绑定。 亲测提现20元，1-2个工作日...</span>
             <p class="auth-span">
@@ -496,6 +599,7 @@
               <li class="active">
                 <span>1</span></li>
               <li>
+<<<<<<< HEAD
                 <a href="https://yusi123.com/page/2">2</a></li>
               <li>
                 <a href="https://yusi123.com/page/3">3</a></li>
@@ -503,6 +607,15 @@
                 <a href="https://yusi123.com/page/4">4</a></li>
               <li>
                 <a href="https://yusi123.com/page/5">5</a></li>
+=======
+                <a href='https://yusi123.com/page/2'>2</a></li>
+              <li>
+                <a href='https://yusi123.com/page/3'>3</a></li>
+              <li>
+                <a href='https://yusi123.com/page/4'>4</a></li>
+              <li>
+                <a href='https://yusi123.com/page/5'>5</a></li>
+>>>>>>> blog/lwx
               <li>
                 <span>...</span></li>
               <li class="next-page">
@@ -528,7 +641,11 @@
                     <div class="arrow"></div>
                     <div class="popover-title">订阅号“欲思”</div>
                     <div class="popover-content">
+<<<<<<< HEAD
                        
+=======
+                      <img src="picture/weixin_1.gif"></div>
+>>>>>>> blog/lwx
                   </div>
                 </div>
               </a>
@@ -564,7 +681,13 @@
         </div>
         <div class="widget d_banner">
           <div class="d_banner_inner">
+<<<<<<< HEAD
           
+=======
+            <script type="text/javascript">/*360*300 创建于 2017/9/21*/
+              var cpro_id = "u3102098";</script>
+            <script type="text/javascript" src="js/c.js"></script>
+>>>>>>> blog/lwx
           </div>
         </div>
         <div class="widget d_tag">
@@ -599,7 +722,11 @@
             <li>
               <a href="https://yusi123.com/3831.html" title="Linux系统vi(vim)编辑器命令使用教程简单介绍">
                 <span class="thumbnail">
+<<<<<<< HEAD
                 
+=======
+                  <img src="picture/timthumb_1.php" alt="Linux系统vi(vim)编辑器命令使用教程简单介绍" /></span>
+>>>>>>> blog/lwx
                 <span class="text">Linux系统vi(vim)编辑器命令使用教程简单介绍</span>
                 <span class="muted">2017-05-31</span>
                 <span class="muted" style="float: right;">12评论</span></a>
@@ -607,7 +734,11 @@
             <li>
               <a href="https://yusi123.com/3829.html" title="Linux系统 Crontab命令 安装配置使用详细说明">
                 <span class="thumbnail">
+<<<<<<< HEAD
                  
+=======
+                  <img src="picture/timthumb_1.php" alt="Linux系统 Crontab命令 安装配置使用详细说明" /></span>
+>>>>>>> blog/lwx
                 <span class="text">Linux系统 Crontab命令 安装配置使用详细说明</span>
                 <span class="muted">2017-05-29</span>
                 <span class="muted" style="float: right;">3评论</span></a>
@@ -615,7 +746,11 @@
             <li>
               <a href="https://yusi123.com/3808.html" title="WordPress绑定多个域名和禁止搜索引擎收录非主域名的方法">
                 <span class="thumbnail">
+<<<<<<< HEAD
                   <img src="" alt="WordPress绑定多个域名和禁止搜索引擎收录非主域名的方法" /></span>
+=======
+                  <img src="picture/timthumb_1.php" alt="WordPress绑定多个域名和禁止搜索引擎收录非主域名的方法" /></span>
+>>>>>>> blog/lwx
                 <span class="text">WordPress绑定多个域名和禁止搜索引擎收录非主域名的方法</span>
                 <span class="muted">2016-09-19</span>
                 <span class="muted" style="float: right;">27评论</span></a>
@@ -623,7 +758,11 @@
             <li>
               <a href="https://yusi123.com/3798.html" title="115网盘福利：Chrome浏览器使用Console代码免扫二维码登陆">
                 <span class="thumbnail">
+<<<<<<< HEAD
                </span>
+=======
+                  <img src="picture/timthumb_1.php" alt="115网盘福利：Chrome浏览器使用Console代码免扫二维码登陆" /></span>
+>>>>>>> blog/lwx
                 <span class="text">115网盘福利：Chrome浏览器使用Console代码免扫二维码登陆</span>
                 <span class="muted">2016-07-01</span>
                 <span class="muted" style="float: right;">19评论</span></a>
@@ -631,7 +770,11 @@
             <li>
               <a href="https://yusi123.com/3795.html" title="升级WordPress时遇到&#8217;另一更新正在进行&#8217;如何解决">
                 <span class="thumbnail">
+<<<<<<< HEAD
                   <img <img src="" alt="升级WordPress时遇到&#8217;另一更新正在进行&#8217;如何解决" /></span>
+=======
+                  <img src="picture/timthumb_1.php" alt="升级WordPress时遇到&#8217;另一更新正在进行&#8217;如何解决" /></span>
+>>>>>>> blog/lwx
                 <span class="text">升级WordPress时遇到&#8217;另一更新正在进行&#8217;如何解决</span>
                 <span class="muted">2016-06-28</span>
                 <span class="muted" style="float: right;">10评论</span></a>
@@ -640,7 +783,13 @@
         </div>
         <div class="widget d_banner">
           <div class="d_banner_inner">
+<<<<<<< HEAD
            
+=======
+            <script type="text/javascript">/*多彩标签云 360*300 创建于 2017/9/22*/
+              var cpro_id = "u3102370";</script>
+            <script type="text/javascript" src="js/c.js"></script>
+>>>>>>> blog/lwx
           </div>
         </div>
         <div class="widget d_comment">
@@ -649,34 +798,55 @@
           <ul>
             <li>
               <a href="https://yusi123.com/3831.html#comment-20482" title="Linux系统vi(vim)编辑器命令使用教程简单介绍上的评论">
+<<<<<<< HEAD
                 
+=======
+                <img alt='' src='picture/48*75e215cea7a9364665ca688b5a23a58a.jpg' srcset='https://yusi123.com/avatar/96*75e215cea7a9364665ca688b5a23a58a.jpg' class='avatar avatar-48 photo' height='48' width='48' />
+>>>>>>> blog/lwx
                 <div class="muted">
                   <i>个人博客</i>2天前说：就来看看</div>
               </a>
             </li>
             <li>
               <a href="https://yusi123.com/3233.html#comment-20465" title="WordPress主题发布：Yusi1.0(扁平化+响应式)免费下载上的评论">
+<<<<<<< HEAD
                 
+=======
+                <img alt='' src='picture/48*06ebb4c33228f66cb22e5b39ebf55678.jpg' srcset='https://yusi123.com/avatar/96*06ebb4c33228f66cb22e5b39ebf55678.jpg' class='avatar avatar-48 photo' height='48' width='48' />
+                <div class="muted">
+>>>>>>> blog/lwx
                   <i>迅雷电影下载</i>1周前 (11-15)说：广告JS没有调用</div>
               </a>
             </li>
             <li>
               <a href="https://yusi123.com/3233.html#comment-20462" title="WordPress主题发布：Yusi1.0(扁平化+响应式)免费下载上的评论">
+<<<<<<< HEAD
                 
+=======
+                <img alt='' src='picture/48*06ebb4c33228f66cb22e5b39ebf55678.jpg' srcset='https://yusi123.com/avatar/96*06ebb4c33228f66cb22e5b39ebf55678.jpg' class='avatar avatar-48 photo' height='48' width='48' />
+>>>>>>> blog/lwx
                 <div class="muted">
                   <i>迅雷电影下载</i>2周前 (11-13)说：你的主题如何让文章页的关键词和页面描述不显示？？？ 我启用第三方的TKD插件之后</div>
               </a>
             </li>
             <li>
               <a href="https://yusi123.com/3608.html#comment-20461" title="WordPress教程:为主题设置独立的Description 和 Keywords上的评论">
+<<<<<<< HEAD
                 
+=======
+                <img alt='' src='picture/48*06ebb4c33228f66cb22e5b39ebf55678.jpg' srcset='https://yusi123.com/avatar/96*06ebb4c33228f66cb22e5b39ebf55678.jpg' class='avatar avatar-48 photo' height='48' width='48' />
+>>>>>>> blog/lwx
                 <div class="muted">
                   <i>迅雷电影下载</i>2周前 (11-13)说：你的主题如何让文章页的关键词和页面描述不显示？？？ 我启用第三方的TKD插件之</div>
               </a>
             </li>
             <li>
               <a href="https://yusi123.com/guestbook#comment-20393" title="留言上的评论">
+<<<<<<< HEAD
                 
+=======
+                <img alt='' src='picture/48*e85a5e15b23b3026aeed28a20965463f.jpg' srcset='https://yusi123.com/avatar/96*e85a5e15b23b3026aeed28a20965463f.jpg' class='avatar avatar-48 photo' height='48' width='48' />
+>>>>>>> blog/lwx
                 <div class="muted">
                   <i>themebetter</i>2个月前 (09-25)说：博主好久都没更新了</div>
               </a>
@@ -686,7 +856,11 @@
         <div class="widget widget_links">
           <div class="title">
             <h2>友情链接</h2></div>
+<<<<<<< HEAD
           <ul class="xoxo blogroll">
+=======
+          <ul class='xoxo blogroll'>
+>>>>>>> blog/lwx
             <li>
               <a href="http://nanlong123.com/" target="_blank">南龙博客</a></li>
             <li>
@@ -717,11 +891,25 @@
           <a rel="nofollow" target="_blank" href="https://yusi123.com/go/aliyun">阿里云</a>&
           <a rel="nofollow" target="_blank" href="https://yusi123.com/go/qiniu">七牛</a></div>
         <div class="trackcode pull-right">
+<<<<<<< HEAD
 
         </div>
       </div>
     </footer>
    
+=======
+          <script src="js/z_stat_1.js" language="JavaScript"></script>
+          <script>var _hmt = _hmt || []; (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?b52ad73b0742bc99858449915680c213";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(hm, s);
+            })();</script>
+        </div>
+      </div>
+    </footer>
+    <script type='text/javascript' src='js/wp-embed.min_1.js'></script>
+>>>>>>> blog/lwx
   </body>
 
 </html>
