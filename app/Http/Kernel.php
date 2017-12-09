@@ -57,12 +57,9 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-// <<<<<<< HEAD
         'hasrole'=>\App\Http\Middleware\HasRole::class,
-// =======
         'islogin' => \App\Http\Middleware\IsLoginMiddleware::class,
 
-// >>>>>>> blog/lwx
     ];
 
 }

@@ -11,7 +11,7 @@ class User extends Model
     public $primaryKey = 'admin_id';//主键
     public $guarded = []; //不可修改的字段
     public $timestamps = false; //是否开启时间(create_at update_at)
-<<<<<<< HEAD
+
 
 
     /**
@@ -29,6 +29,5 @@ class User extends Model
         return $this->hasOne('App\Model\UserInfo','uid','user_id');
     }
 
-=======
->>>>>>> blog/lwx
+
 }

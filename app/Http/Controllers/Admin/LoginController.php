@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash; //引哈希加密
 use App\Model\User;
-//引入模板User Upser.php(里面主要写了表名 主键名 可修改字段 是否有时间段)
+//引入模板User Upser.php(里面主要写了表名 /主键名 可修改字段 是否有时间段)
 //use App\Http\Request;
 //
 use App\Http\Controllers\Controller;
@@ -20,10 +20,7 @@ use App\Org\code\Code;  //命名空间 App\Org\code\类名  类似于 use DB
 use Gregwar\Captcha\CaptchaBuilder;
 use Gregwar\Captcha\PhraseBuilder;
 
-// <<<<<<< HEAD
 
-// =======
-// >>>>>>> blog/lwx
 class LoginController extends Controller
 {
     /**
@@ -73,15 +70,11 @@ class LoginController extends Controller
         //Validator::make(要验证的数据，验证规则，提示信息)
         //参数一 要验证的数据
         $input = $request->except('_token');
-// <<<<<<< HEAD
-// //        print_r($input);
-// =======
-     
-// >>>>>>> blog/lwx
+
         //参数二 验证规则
         $rule = [
-            'admin_name' => 'required|between:4,50',
-            'admin_password' => 'required|between:3,20',
+            'admin_name' => 'required|between:3,15',
+            'admin_password' => 'required|between:3,15',
         ];
         //参数三 提示信息
         $massage = [
@@ -111,14 +104,8 @@ class LoginController extends Controller
         if($user['admin_password'] != $input['admin_password']){
             return redirect('admin/login')->with('errors','密码错误,请重新输入');
         }else{
-// <<<<<<< HEAD
-            // dd($user);
-            session(['user' => $user]);
-// =======
-
+          //将信息放入Session
             Session::put('user', $user);
-            // dd(Session::get('user'));
-// >>>>>>> blog/lwx
             return redirect('admin/user/index');
         }
 

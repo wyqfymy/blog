@@ -55,12 +55,12 @@ class LoginController extends Controller
         // 获取验证码的内容
         $phrase = $builder->getPhrase();
         // 把内容存入session
-<<<<<<< HEAD
+
     
         session()->put('code', $phrase);
-=======
+
         \Session::flash('code', $phrase);
->>>>>>> blog/lwx
+
         // 生成图片
         header("Cache-Control: no-cache, must-revalidate");
         header("Content-Type:image/jpeg");
@@ -102,11 +102,9 @@ class LoginController extends Controller
            return redirect('home/hlogin')->with('errors','验证码错误,请重新输入');
        }
        //2.判断用户名和密码是否存在(前面引入模型User 下面直接使用)
-<<<<<<< HEAD
+
         $user = Home_user::where('uname',$input['uname'])->first();
-=======
-        $user = home_user::where('uname',$input['uname'])->first();
->>>>>>> blog/lwx
+
         if(!$user){
             return redirect('home/hlogin')->with('errors','用户名不存在,请重新输入');
         }
@@ -121,19 +119,14 @@ class LoginController extends Controller
        if(Hash::check($admin_password, $input['admin_password'])){
            return redirect('home/login')->with('errors','密码错误,请重新输入');
        }else{
-<<<<<<< HEAD
+
            return redirect('/home/zc');
        }
 
-    }
-    
-=======
-           return redirect('/home/hindex');
-       }
+  
+      // return redirect('/home/hindex');
 
     }
 
 
-
->>>>>>> blog/lwx
 }

@@ -3,17 +3,17 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Model\User;
-<<<<<<< HEAD
-=======
+
 use Session;
->>>>>>> blog/lwx
+
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
-<<<<<<< HEAD
+
 use App\Model\Role;
 use DB;
+
 class UserController extends Controller
 {
 
@@ -35,19 +35,13 @@ class UserController extends Controller
         if (empty($b)){
             $a = [];
         }else{
-
-
             $own_role = DB::table('role_user')->where('uid',$id)->get(  );
             
-
-
             foreach ($own_role as $key => $value) {
                  $a[] = $value->role_id;
             }
         }
-    // dd($a);
-    // dd($own_permissions);
-
+   
         return view('admin.role.urole',compact('user','role','a'));
     }
 
@@ -76,11 +70,6 @@ class UserController extends Controller
         return redirect('/admin/user/index');
     }
 
-=======
-
-class UserController extends Controller
-{
->>>>>>> blog/lwx
     /**
      * Display a listing of the resource.
      *
@@ -88,11 +77,8 @@ class UserController extends Controller
      */
     public function index(Request $request)
     {
+     
         //查数据
-<<<<<<< HEAD
-        // dd($request);
-=======
->>>>>>> blog/lwx
         $data = User::orderBy('admin_id','asc')
             ->where(function($query) use($request){
                 //检测关键字
@@ -115,10 +101,9 @@ class UserController extends Controller
      */
     public function create()
     {
-<<<<<<< HEAD
-=======
+
         // dd(Session::get('user'));
->>>>>>> blog/lwx
+
         return view('admin/user/create');
     }
 
@@ -219,7 +204,7 @@ class UserController extends Controller
         //处理修改的数据
 
         $input = $request->except('_token');
-        $user = User::find($id);
+        
         $rule = [
             'admin_name'=>'required|regex:/^[\x{4e00}-\x{9fa5}A-Za-z0-9_]+$/u|between:5,20',
             
@@ -249,22 +234,22 @@ class UserController extends Controller
                   ->withInput();
         }
         $data = $request->except('_token','admin_repassword');
-
+        $user = User::find($id);
         $res = $user->update($data);
         // dd($input);
         
         $date = [];
         if($res){
-            $date['error'] = 0;
-            $date['msg'] ="删除成功";
+            
+            $msg ="删除成功";
         }else{
-            $date['error'] = 1;
-            $date['msg'] ="删除失败";
+           
+            $msg ="删除失败";
         }
 
 //        return  json_encode($data);
 
-        return $date;
+        return  redirect('admin/user/index')->with('msg', $msg);
 
     }
 

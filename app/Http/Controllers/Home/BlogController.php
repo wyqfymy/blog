@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Home;
-<<<<<<< HEAD
+
 //控制器用的所有的类都需要引入
 //表单验证的门面类 如不在config/app.对这个类重命名成这样类似DB的话 需要引入
 use Illuminate\Support\Facades\Validator;
@@ -20,21 +20,15 @@ use App\Org\code\Code;  //命名空间 App\Org\code\类名  类似于 use DB
 //captcha验证码引入
 use Gregwar\Captcha\CaptchaBuilder;
 use Gregwar\Captcha\PhraseBuilder;
-=======
-
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
->>>>>>> blog/lwx
 
 class BlogController extends Controller
 {
-    //
     public function index()
     {
     	return view('home.index.index');
     }
 
-<<<<<<< HEAD
+
     public function yzm()
     {
         //对自定义的类实例化
@@ -180,6 +174,15 @@ class BlogController extends Controller
     		return 0;
     	}
     }
-=======
->>>>>>> blog/lwx
+    
+    //忘记密码
+    public function forget()
+    {
+        return view('home.login.forget');
+    }
+    public function doforget()
+    {
+
+    }
+
 }

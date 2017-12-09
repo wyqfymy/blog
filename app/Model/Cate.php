@@ -39,19 +39,31 @@ class Cate extends Model
             }else{
                 $cates[$k]['cate_names'] = '--&nbsp;&nbsp;&nbsp;'.$name;
             }
-            
-            // $cates[$k]['cate_names'] = '|---'.$name;
-            // $res['cate_name'] = '孙佳';
-             // dd($res['cate_name']);
 
         }
-        // dd($cates);
+        // 
         return $cates;
     }
 
-    public function fenlei()
-    {
 
+    public static function fenlei()
+    {
+        //获取一级分类
+        $cates = self::where('pid', 0)->get();
+        // dd($cates);
+        $data = [];
+
+        foreach($cates as $k=>$v){
+            $brr = []; 
+             $arr = \DB::table('article_cate')->where('pid', $v->cate_id)->get();
+             foreach($arr as $kk=>$vv){
+               $brr[] = $vv; 
+             }
+            $v->sub = $brr;
+            $data[] = $v;
+        }
+        // dd($data);
+        return $data;
     }
 
 

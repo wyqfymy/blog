@@ -20,6 +20,16 @@
     <div class="admin-content-body">
       <div class="am-cf am-padding">
         <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">后台用户</strong> / <small>几个后台的用户</small></div>
+        @if (session('msg'))
+                <b class="msgb" style="color:red; font-size:15px">{{session('msg')}}</b>
+                    <script>
+                        setTimeout(function(){
+                            $('.msgb').empty().remove();
+
+                        },2000);
+                   </script>
+                            
+        @endif
       </div>
 
       <div class="am-g" id="qqq">
@@ -57,10 +67,9 @@
                     <div class="am-btn-group am-btn-group-xs">
                       <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span><a href="javascript:;" onclick="aa({{$v->admin_id}})">编辑</a></button>
                       <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> <a href="javascript:;" onclick="user({{$v->admin_id}})">删除</a></button>
-<<<<<<< HEAD
+
                       <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span><a href="{{asset('role/urole/'.$v->admin_id)}}">授权</a></button>
-=======
->>>>>>> blog/lwx
+
                     </div>
                   </div>
               </td>

@@ -47,7 +47,7 @@ class CateController extends Controller
     {
         //获取所有分类
         $cates=  Cate::tree(); 
-       
+        
         foreach($cates as $k=>$v){
             // dd($v);
             // 
