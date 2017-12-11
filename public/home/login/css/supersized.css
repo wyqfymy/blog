@@ -15,8 +15,10 @@ body { background:#111; height:100%; }
 	img { 
 		position:absolute;
 		/*border:none;*/
-		height:48px;
-		left:176px;
+
+		height:40px;
+		left:185px;
+
 		top:159px;}
 	
 	#supersized-loader { position:absolute; top:50%; left:50%; z-index:0; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background:url(../img/progress.gif) no-repeat center center;}

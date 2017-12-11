@@ -24,12 +24,15 @@
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
     <link rel="stylesheet" href="{{asset('assets/css/amazeui.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/admin.css')}}">
+
     <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
+        <script src="{{asset('layui/layui.js')}}"></script>
     <script src="{{asset('assets/js/echarts.min.js')}}"></script>
     <script src="{{asset('layer/layer.js')}}"></script>
+    <script src="{{asset('layui/layui.js')}}"></script>
 </head>
 
-<body data-type="index">
+<body data-type="index" >
 
 
     <header class="am-topbar am-topbar-inverse admin-header">

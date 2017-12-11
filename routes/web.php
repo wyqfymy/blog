@@ -49,6 +49,8 @@ Route::post('home/dologin', 'Home\LoginController@dologin');
 
 // 前台显示
 Route::get('home/hindex','Home\BlogController@index');
+Route::post('home/pinglun','Home\PinglunController@create');
+Route::post('home/pinglun/index','Home\PinglunController@index');
 
 
 
@@ -57,6 +59,11 @@ Route::get('home/hindex','Home\BlogController@index');
 
 
 
-//文章模块
+//文章模块 (后台)
 Route::get('admin/article/index','Admin\ArticleController@index');
 Route::get('admin/article/add','Admin\ArticleController@add');
+Route::post('admin/upload','Admin\ArticleController@upload');
+Route::post('admin/article/create','Admin\ArticleController@create');
+
+//文章前台
+Route::get('home/article/{id}','Home\ArticleController@article');
